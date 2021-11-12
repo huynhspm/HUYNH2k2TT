@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL_game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL_game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL_game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Header/Collision_BulletPlane_And_Boss.hpp" />
+		<Unit filename="Header/Collision_BulletPlane_And_BulletBoss.hpp" />
+		<Unit filename="Header/Collision_BulletPlane_And_Obstacle.hpp" />
+		<Unit filename="Header/Collision_Plane_And_Boss.hpp" />
+		<Unit filename="Header/Collision_Plane_And_BulletBoss.hpp" />
+		<Unit filename="Header/Collision_Plane_And_Obstacle.hpp" />
+		<Unit filename="Header/Design_Broad.hpp" />
+		<Unit filename="Header/End_Game.hpp" />
+		<Unit filename="Header/Prepare.hpp" />
+		<Unit filename="Header/Public.hpp" />
+		<Unit filename="Header/SDL_default.hpp" />
+		<Unit filename="Header/Show.hpp" />
+		<Unit filename="Header/Show_Background.hpp" />
+		<Unit filename="Header/Show_Boss.hpp" />
+		<Unit filename="Header/Show_BulletBoss.hpp" />
+		<Unit filename="Header/Show_BulletPlane.hpp" />
+		<Unit filename="Header/Show_Menu.hpp" />
+		<Unit filename="Header/Show_Obstacle.hpp" />
+		<Unit filename="Header/Show_Plane.hpp" />
+		<Unit filename="Header/Solve_Boss.hpp" />
+		<Unit filename="Header/Solve_BulletBoss.hpp" />
+		<Unit filename="Header/Solve_BulletPlane.hpp" />
+		<Unit filename="Header/Solve_Collision.hpp" />
+		<Unit filename="Header/Solve_Event.hpp" />
+		<Unit filename="Header/Solve_Level.hpp" />
+		<Unit filename="Header/Solve_Music.hpp" />
+		<Unit filename="Header/Solve_Obstacle.hpp" />
+		<Unit filename="Header/Solve_Pause.hpp" />
+		<Unit filename="Header/Solve_Plane.hpp" />
+		<Unit filename="Header/Start_Game.hpp" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="score.text" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
