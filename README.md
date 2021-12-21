@@ -1,4 +1,4 @@
-# HUYNH2k2TT
+# HUYNH2k2TT - học kì 2 năm nhất
 
 a small project by c++ and sdl
 
