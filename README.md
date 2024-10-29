@@ -1,49 +1,77 @@
-# HUYNH2k2TT - học kì 2 năm nhất
+# <div align="center"> 🎮 GAME - UET - 2021 🎮
 
-a small project by c++ and sdl
+## **1. About this project 📝**
 
-Introduce:
-When you run program, Menu is showed (click mouse to pick):
-	+) Choose Level: you can choose level(if you do not choose, it is level 1)
-	+) About: way to move plane, image of obstacles and items  
-	+) High Score:
-	+) New Game to play and discover.
+A small game project, reused and further developed from [my first project back in 11th grade](https://github.com/huynhspm/First-Product), using C++ and the SDL2 library for graphics. The game draws inspiration from classic Nokia mobile games I enjoyed in my childhood, enhanced with creative bosses across various levels.
 
-Start game, you have:
-	+) Level: Level that you choose in Menu
- 	+) Score: 0
-	+) Lives: 5
-	+) Mode: Battle normal.
+## **2. How to run 🚀**
+- Clone repository:
 
-In right screen, there are 4 buttons:
-	+) Pause: to pause game
-	+) Sound toggle: turn on or off the music
-	+) Replay: to back to Menu
-	+) Quit: Close Game Console
+      git clone https://github.com/huynhspm/GAME-UET.git
 
-Plane: you move according to the guide in "About"
-You will shoot obstacles and bosses.
-You move plane to shoot 4 types of items falling from sky:
-	+) rock: if you shoot, your score increases by 1 and they will disappear, 
-		 if your plane is hit, your number of lives decreases by 1 and number of bullets
-		 decreases by 1 if it is greater than 2. 
- 	+) shield: if you shoot, you receive a shield.
-	+) heart: if you shoot, you receive an extra life.
-	+) bullet: if you shoot, number of bullets increases by 1.
+- For ubuntu:
 
-For each shot item, you will hear special sound (except rock).
+      # install
+      sudo apt update
+      sudo apt install g++ 
+      sudo apt install cmake
+      sudo apt install libsdl2-dev libsdl2-ttf-dev libsdl2-mixer-dev libsdl2-image-dev
 
-When you reach enough score, mode change to Boss Battle and you start to fight with boss:
+      # verify
+      g++ --version
+      cmake --version
+      sdl2-config --version
 
-Boss in level 1: boss throws bullets vertically.
-Boss in level 2: boss throws bullets that bounce when reach the border.  
-Boss in level 3: boss shoots laser beam (before shooting, its face color change to red for warning)
+      # run
+      mkdir build
+      cd build
+      cmake ..
+      make
+      ./SDL2_GAME
 
-If plane is hit by boss bullets or beam, your lives decrease by 1 and number of bullets decreases by 1 if it is greater than 2.
+- For window: 
+  - Install C++
 
-Setting:
-*	Method 1:
-	- Copy all files and folders to bin/debug except folders: bin and obj
-	- Then run SDL_game.ext in bin/debug.
-*	Method 2:
-	- Open project in your IDE and compile a new program (not recommend).
+        # verify
+        g++ --version
+
+  - Run
+
+        cd window
+        SDL_game.exe
+
+
+## **3. How to play 🕹️**
+- When you start the program, a menu appears with the following options (click to select):
+  - Choose Level: Select a starting level (defaults to Level 1 if no selection is made).
+  - About: View instructions on plane controls, along with images of obstacles and items.
+  - High Score: Check the highest scores achieved.
+  - New Game: Begin a new game and explore!"
+
+- When the game starts, you begin with:
+  - Level: The level selected in the Menu
+  - Score: 0
+  - Lives: 5
+  - Mode: Normal Battle
+  - On the right side of the screen, there are four buttons:
+  	- Pause: Pause the game
+  	- Sound Toggle: Turn music on or off
+  	- Replay: Return to the Menu
+  	- Quit: Exit the Game Console
+
+- Move plane according to the guide in the "About" section. Your goal is to shoot obstacles and bosses while also targeting four types of items falling from the sky:
+	- Rock: Shooting it increases your score by 1, and the rock disappears. However, if your plane is hit, you lose 1 life and 1 bullet (if you have more than 2).
+	- Shield: Shooting it grants you a protective shield.
+	- Heart: Shooting it awards you an extra life.
+	- Bullet: Shooting it increases your bullet count by 1.
+
+- For each shot item, you will hear special sound (except rock). When you reach enough score, mode change to Boss Battle and you start to fight with boss:
+  - Boss in level 1: boss throws bullets vertically.
+  - Boss in level 2: boss throws bullets that bounce when reach the border.  
+  - Boss in level 3: boss shoots laser beam (before shooting, its face color change to red for warning)
+
+- If plane is hit by boss bullets or beam, your lives decrease by 1 and number of bullets decreases by 1 if it is greater than 2.
+
+
+## **4. Demo 🎬**
+![Gameplay GIF](demo.gif)
